@@ -6,7 +6,7 @@
 /*   By: ajewell <ajewell@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 14:39:14 by ajewell           #+#    #+#             */
-/*   Updated: 2025/11/10 16:15:48 by ajewell          ###   ########.fr       */
+/*   Updated: 2025/11/10 16:20:12 by ajewell          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ void	ft_handle_type(const char c, va_list args, int * pcount)
 	else if (c == 'p')
 		ft_print_ptr(va_arg(args, void *), pcount);
 	else if (c == 'd')
-		ft_print_nbr_decimal(va_arg(args, double), pcount);
+		ft_print_nbr_decimal(va_arg(args, int), pcount);
 	else if (c == 'i')
 		ft_print_nbr_int(va_arg(args, int), pcount);
 	else if (c == 'u')
